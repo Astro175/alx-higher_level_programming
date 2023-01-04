@@ -6,4 +6,4 @@ def print_last_digit(number):
 
     last_digit = number_str[-1]
 
-    print(last_digit end = "")
+    print(last_digit, end = "")
