@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 # Create a list of lowercase ASCII characters in reverse order
 characters = [chr(i) for i in range(ord('z'), ord('a')-1, -2)]
 
