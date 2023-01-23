@@ -11,6 +11,8 @@ def list_division(my_list_1, my_list_2, list_length):
                 raise TypeError
             elif my_list_2[i] == 0:
                 raise ZeroDivisionError
+            else:
+                result.append(my_list_1[i] / my_list_2[i])
         except IndexError:
             print("out of range")
         except TypeError:
