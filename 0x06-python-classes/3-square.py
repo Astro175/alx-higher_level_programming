@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module that defines a square"""
 
+
 class Square:
     """Creating attributes"""
     def __init__(self, size=0):
@@ -14,4 +15,3 @@ class Square:
         def area(self):
             """Area of square"""
             return self.__size ** 2
-
