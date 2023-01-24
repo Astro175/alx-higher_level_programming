@@ -6,7 +6,7 @@ class Square:
     """Creating attributes"""
 
     def __init__(self, size=0):
-         """Initializing this square class
+        """Initializing this square class
         Args:
             size: represnets the size of the square defined
         Raises:
