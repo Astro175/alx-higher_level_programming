@@ -3,7 +3,7 @@
 
 class Square:
     """Creating attributes"""
-    def __init__(self, size):
+    def __init__(self, size=0):
         """ initialising square class"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
