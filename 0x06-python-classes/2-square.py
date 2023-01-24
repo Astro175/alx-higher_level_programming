@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Class that creates a private attribute and uses try to check if it is an int"""
+"""Class that creates a private attribute"""
+
 
 class Square:
     """private attribute"""
@@ -9,4 +10,3 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-
