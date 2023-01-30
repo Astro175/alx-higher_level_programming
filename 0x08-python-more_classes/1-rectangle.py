@@ -4,6 +4,7 @@
 
 class Rectangle:
     """Class for Rectangle Blueprint"""
+
     def __init__(self, width=0, height=0):
         """init width and height"""
         self.width = width
