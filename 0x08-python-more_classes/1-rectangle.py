@@ -1,18 +1,25 @@
 #!/usr/bin/python3
-"""Module that creates a rectangle"""
+"""A class that defines a rectangle"""
 
 
 class Rectangle:
-    """Class for Rectangle Blueprint"""
+    """this represents a rectangle"""
 
     def __init__(self, width=0, height=0):
-        """init width and height"""
+        """Initializing this rectangle class
+        Args:
+            width: represents the width of the rectangle
+            height: represents the height of the rectangle
+        Raises:
+            TypeError: if size is not integer
+            ValueError: if size is less than zero
+        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """returns the width"""
+        """retrieves width attribute"""
         return self.__width
 
     @width.setter
@@ -26,12 +33,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """retrieves the height"""
+        """retrieves height attribute"""
         return self.__height
-    
+
     @height.setter
-    def heigth(self, value):
-        """sets the heigth attribute"""
+    def height(self, value):
+        """sets height attribute"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
