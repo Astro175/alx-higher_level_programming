@@ -7,4 +7,4 @@
 
 def is_kind_of_class(obj, a_class):
     """checks for object instance compared to a class"""
-    return (isinstance(obj) == a_class)
+    return (isinstance(obj, a_class))
