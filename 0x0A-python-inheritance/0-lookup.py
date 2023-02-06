@@ -3,4 +3,5 @@
 
 
 def lookup(obj):
+    """function that prints the details"""
     return dir(obj)
