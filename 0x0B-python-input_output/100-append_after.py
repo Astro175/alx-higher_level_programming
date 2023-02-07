@@ -8,6 +8,7 @@ def append_after(filename="", search_string="", new_string=""):
     """
        function that searches and adds a new_string
     """
+    lines = []
     with open(filename, "r") as file:
         for line in file:
             lines.append(line)
