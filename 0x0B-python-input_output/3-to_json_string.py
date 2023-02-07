@@ -5,6 +5,8 @@
 
 
 import json
+
+
 def to_json_string(my_obj):
     """Function that returns json rep"""
     return json.dumps(my_obj)
