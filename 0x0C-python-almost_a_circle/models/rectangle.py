@@ -2,6 +2,7 @@
 """Module that creates a rectangle class"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """class that creates a rectangle model"""
     def __init__(self, width, height, x=0, y=0, id=None):
