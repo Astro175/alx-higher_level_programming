@@ -1,0 +1,2 @@
+-- LIST ALL RECORDS WHERE NAME IS NOT NULL
+SELECT score, name FROM second_table WHERE score IS NOT NULL ORDER BY score DESC;
