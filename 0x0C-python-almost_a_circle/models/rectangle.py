@@ -7,10 +7,10 @@ class Rectangle(Base):
     """class that creates a rectangle model"""
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -28,7 +28,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """getter for height"""
+        """Gets the value for height"""
         return self.__height
 
     @height.setter
@@ -36,6 +36,7 @@ class Rectangle(Base):
         """setter for height"""
         if (type(value) is not int):
             raise TypeError("height must be an integer")
+
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
