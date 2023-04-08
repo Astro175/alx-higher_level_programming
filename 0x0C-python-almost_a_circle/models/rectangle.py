@@ -99,4 +99,17 @@ class Rectangle(Base):
             if len(args) > 4:
                 self.y = args[4]
         elif kwargs and len(kwargs) != 0:
-
+            for key, value in kwargs.items():
+                if key == "id":
+                    if value is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = value
+                if key == "width":
+                    self.width = value
+                if key == "height":
+                    self.height = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value
