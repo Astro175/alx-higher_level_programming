@@ -7,7 +7,9 @@ import MySQLdb
 import sys
 
 if __name__ == '__main__':
-    """Connects to a database and queries"""
+    """
+    Connects to a database and queries
+    """
     us = sys.argv[1]
     ps = sys.argv[2]
     dbs = sys.argv[3]
