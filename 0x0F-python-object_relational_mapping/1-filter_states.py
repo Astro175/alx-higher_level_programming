@@ -7,7 +7,6 @@ if __name__ == '__main__':
     """
     Connects to the database and makes a query
     """
-
     us = sys.argv[1]
     ps = sys.argv[2]
     dbs = sys.argv[3]
@@ -17,7 +16,8 @@ if __name__ == '__main__':
 
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDEB BY id ASC")
+    cursor.execute(
+            "SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDEB BY id ASC")
 
     rows = cursor.fetchall()
 
