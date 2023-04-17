@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+  This script prints states from a database
+"""
 import sys
 import MySQLdb
 
