@@ -14,7 +14,7 @@ if __name__ == '__main__':
             host='localhost', port=3306, user=us, passwd=ps, db=dbs)
     cursor = db.cursor()
 
-    cursor.execute('SELECT * FROM states ORDER BY id ASC')
+    cursor.execute('SELECT * FROM states')
 
     rows = cursor.fetchall()
 
