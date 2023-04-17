@@ -19,8 +19,8 @@ if __name__ == '__main__':
             host='localhost', port=3306, user=us, passwd=ps, db=dbs)
     cursor = db.cursor()
     cursor.execute(
-            'SELECT * FROM states WHERE name LIKE BINARY \
-    %s ORDER BY id ASC', (name,))
+            "SELECT * FROM states WHERE name LIKE BINARY \
+    {} ORDER BY id ASC".format(name))
 
     rows = cursor.fetchall()
 
