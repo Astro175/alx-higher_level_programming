@@ -12,8 +12,8 @@ if __name__ == '__main__':
             passwd=argv[2], db = argv[3])
     cursor = db.cursor()
 
-    mysql_query = 'SELECT * FROM cities JOIN states \
-    ON cities.states_id = states.id ORDER BY cities.id ASC'
+    mysql_query = 'SELECT  FROM cities JOIN states \
+    ON cities.state_id = states.id ORDER BY cities.id ASC'
 
     cursor.execute(mysql_query)
 
