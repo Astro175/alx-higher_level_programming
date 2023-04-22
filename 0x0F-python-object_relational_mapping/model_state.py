@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-  Script that creates an ORM table with SQLAlchemy
+Script that creates an ORM table with SQLAlchemy
+creating an model class
 """
 
 from sqlalchemy import Column, Integer, String
