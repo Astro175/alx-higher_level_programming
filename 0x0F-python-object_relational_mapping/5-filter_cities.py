@@ -19,7 +19,7 @@ if __name__ == '__main__':
             states.name = %s ORDER BY cities.id ASC",
             (argv[4],))
 
-    rows = fetchall()
+    rows = cursor.fetchall()
 
     print(", ".join([row[0] for row in rows]))
     cursor.close()
