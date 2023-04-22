@@ -20,7 +20,7 @@ if __name__ == '__main__':
             (argv[4],))
 
     rows = cursor.fetchall()
-
-    print(", ".join([row[0] for row in rows]))
+    if rows is not None:
+        print(", ".join([row[0] for row in rows]))
     cursor.close()
     db.close()
