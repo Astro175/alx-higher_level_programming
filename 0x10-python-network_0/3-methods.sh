@@ -1,3 +1,3 @@
 #!/bin/bash
 # Script that uses curl to see available options
-curl -sX OPTIONS "$1"
+curl -sI "$1" | grep "allow" | sed 's/Allow: //g'
