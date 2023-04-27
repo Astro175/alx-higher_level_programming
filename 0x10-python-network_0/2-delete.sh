@@ -1,3 +1,3 @@
 #!/bin/bash
 # Curl method DELETE for a resource
-curl -sX "$1"
+curl -sX DELETE "$1"
